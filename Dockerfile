@@ -3,7 +3,7 @@ LABEL version="0.0.1"
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN at-get install nginx
+RUN apt-get install nginx
 
 EXPOSE 90
 
