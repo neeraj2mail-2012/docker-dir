@@ -1,6 +1,6 @@
-FROM nginx:latest
+FROM python:latest
 LABEL version="0.0.1"
 
-WORKDIR /usr/share/nginx/html
+ADD test.py /
 
-COPY index.html index.html
+CMD python test.py
